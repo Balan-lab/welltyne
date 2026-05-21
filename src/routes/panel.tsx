@@ -9,7 +9,7 @@ import { analyzePanel } from "@/lib/analyze.functions";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Loader2, FlaskConical, Heart, Droplets, Shield, Kidney, Pill, Zap } from "lucide-react";
+import { Loader2, FlaskConical, Heart, Droplets, Shield, Bean, Pill, Zap } from "lucide-react";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/panel")({ component: PanelPage });
@@ -52,7 +52,7 @@ const CATEGORIES = [
     keys: ["hemoglobin", "wbc", "platelets"],
   },
   {
-    key: "kidney",
+    key: "Bean",
     label: "Kidney Function",
     icon: Kidney,
     color: "text-blue-400",
