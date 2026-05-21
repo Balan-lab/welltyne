@@ -46,7 +46,7 @@ export function SplashScreen({ onDone }: { onDone: () => void }) {
         opacity: phase === "enter" ? 0 : 1,
       }}>
         <img
-          src="/src/assets/logo-splash.png"
+          src="/assets/logo-splash.png"
           alt="Welltyne"
           style={{ width: 380, height: "auto", filter: "drop-shadow(0 0 40px rgba(13,125,107,0.6)) brightness(1.15)" }}
         />

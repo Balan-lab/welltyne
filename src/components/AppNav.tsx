@@ -37,7 +37,7 @@ export function AppNav() {
     
     {/* Logo image */}
     <img
-      src="/src/assets/logo-splash.png"
+      src="/assets/logo-splash.png"
       alt="Welltyne"
       style={{
         height: 150,
