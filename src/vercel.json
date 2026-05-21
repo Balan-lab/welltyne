@@ -1,5 +1,8 @@
 {
-  "buildCommand": "npx nitro build --preset vercel",
-  "outputDirectory": ".vercel/output",
-  "installCommand": "npm install"
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
