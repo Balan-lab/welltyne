@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import logoUrl from "../assets/logo-splash.png";
 
 export function SplashScreen({ onDone }: { onDone: () => void }) {
   const [phase, setPhase] = useState<"enter" | "hold" | "exit">("enter");
@@ -46,7 +47,7 @@ export function SplashScreen({ onDone }: { onDone: () => void }) {
         opacity: phase === "enter" ? 0 : 1,
       }}>
         <img
-          src="/assets/logo-splash.png"
+          src={logoUrl}
           alt="Welltyne"
           style={{ width: 380, height: "auto", filter: "drop-shadow(0 0 40px rgba(13,125,107,0.6)) brightness(1.15)" }}
         />

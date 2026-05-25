@@ -3,6 +3,7 @@ import { useAuth } from "@/hooks/use-auth";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { FlaskConical, History, LogOut } from "lucide-react";
+import logoUrl from "../assets/logo-splash.png";
 
 export function AppNav() {
   const { user } = useAuth();
@@ -37,7 +38,7 @@ export function AppNav() {
     
     {/* Logo image */}
     <img
-      src="/assets/logo-splash.png"
+      src={logoUrl}
       alt="Welltyne"
       style={{
         height: 150,
